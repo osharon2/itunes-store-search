@@ -1,6 +1,6 @@
 # itunes-store-search
 itunes store search for tv shows and movies
 
-[itunes-store-web-service-search-api] (https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api)
+[itunes search api](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api).
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

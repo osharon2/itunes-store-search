@@ -16,19 +16,19 @@ class ItemPage extends Component {
     };
   }
   async componentWillMount() {
-    let value = await lookUpById(this.props.match.params.id);
-      let resizeImg = value.artworkUrl100.replace("100x100", "500x500");
-      this.setState({
-        name: value.trackName,
-        img: resizeImg,
-        artist: value.artistName,
-        ViewUrl: value.trackViewUrl,
-        kind: value.kind,
-        genre: value.primaryGenreName,
-        description: value.longDescription,
-        country: value.country,
-        date: value.releaseDate
-    })
+    let itemData = await lookUpById(this.props.match.params.id);
+    let resizeImg = itemData.artworkUrl100.replace("100x100", "500x500");
+    this.setState({
+      name: itemData.trackName,
+      img: resizeImg,
+      artist: itemData.artistName,
+      ViewUrl: itemData.trackViewUrl,
+      kind: itemData.kind,
+      genre: itemData.primaryGenreName,
+      description: itemData.longDescription,
+      country: itemData.country,
+      date: itemData.releaseDate
+    });
   }
   render() {
     var date = new Date(this.state.date);
@@ -36,7 +36,7 @@ class ItemPage extends Component {
     return (
       <div className="card">
         <div className="card-left">
-          <img src={this.state.img} alt="preview img"/>
+          <img src={this.state.img} alt="preview img" />
         </div>
         <div className="card-right">
           <span>{this.state.name} </span>
@@ -58,5 +58,4 @@ class ItemPage extends Component {
     );
   }
 }
-
 export default ItemPage;

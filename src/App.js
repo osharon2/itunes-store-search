@@ -4,7 +4,7 @@ import Search from "./components/Search/Search";
 const App = () => (
   <div className="App">
     <div className="Title">
-      <span id="logo" href={`/`}/>
+      <span id="logo"/>
       <h1>iTunes Search</h1>
     </div>
     <Search />

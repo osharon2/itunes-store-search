@@ -1,0 +1,38 @@
+.tab-content {
+  height: 52vh;
+  overflow-y: scroll;
+}
+.Result {
+  display: block !important;
+  border-radius: 0 !important;
+  border-right: aotu none !important;
+}
+
+.ListGroup .Result:first-child {
+  border-top: none;
+}
+
+.ListGroup {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+}
+
+.Restext {
+  display: table-cell;
+  padding-left: 12px;
+  vertical-align: middle;
+}
+
+.ResContent {
+  margin-bottom: 0;
+  color: gray;
+  font-size: 11px;
+}
+
+.ResImg {
+  width: 60px;
+  white-space: normal;
+  display: table-cell;
+  vertical-align: middle;
+}

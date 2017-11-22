@@ -1,0 +1,14 @@
+#Search {
+  width: 50vw;
+  margin: 0 auto;
+}
+.dropdown-menu {
+  min-width: 0px;
+}
+
+.msgNoRslts {
+  text-align: center;
+  font-size: 15px;
+  color: #aeaeae;
+  font-family: monospace;
+}
